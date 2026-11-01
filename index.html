@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Методы исследования бессознательного в организациях — гайд по набору литературы</title>
+<!-- Гайд v1.0 · 01.11.2026 · по набору литературы Е. Шаповаловой (НР) · RU/EN · черновик ИИ, требует вычитки -->
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#2B2B2E; --slate:#55524C; --stone:#8C8C88; --mist:#DDD8CF; --paper:#EFEBE2; --white:#F7F4EF; --card:#FFFFFF;
+  --accent:#2F4538; --accent-soft:#E6EBE5; --terra:#B5652E; --terra-soft:#F4E7DC;
+  --font:'Montserrat Alternates',-apple-system,sans-serif; --mono:'JetBrains Mono',ui-monospace,monospace;
+  --r:12px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--white);color:var(--ink);font:400 15.5px/1.6 var(--font)}
+.wrap{max-width:980px;margin:0 auto;padding:0 16px}
+h1{font-size:clamp(26px,5vw,42px);font-weight:700;letter-spacing:-.03em;line-height:1.05;margin:0 0 10px}
+h2{font-size:clamp(20px,3vw,28px);font-weight:600;letter-spacing:-.02em;margin:0 0 6px}
+p{margin:0 0 12px}
+.lbl{font:500 10.5px/1.4 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin:0 0 10px}
+.muted{color:var(--slate)} .small{font-size:13.5px}
+html[lang=ru] .en{display:none}
+html[lang=en] .ru{display:none}
+/* header */
+header.top{position:sticky;top:0;z-index:50;background:rgba(247,244,239,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--mist)}
+header.top .wrap{display:flex;align-items:center;gap:10px;padding:10px 16px}
+header.top .t{font-weight:600;font-size:14px;letter-spacing:-.01em;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.langbar{display:flex;gap:6px}
+.langbar button{font:600 12px/1 var(--mono);letter-spacing:.05em;border:1px solid var(--stone);background:#fff;color:var(--ink);border-radius:999px;padding:8px 13px;cursor:pointer}
+.langbar button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+/* hero */
+.hero{background:var(--paper);padding:34px 0 26px}
+.hero .sub{color:var(--slate);max-width:720px}
+
+.intro{list-style:none;display:grid;gap:10px;margin:18px 0 0;padding:0;max-width:860px}
+@media(min-width:760px){.intro{grid-template-columns:1fr 1fr}}
+.intro li{background:var(--card);border:1px solid var(--mist);border-radius:var(--r);padding:13px 14px;font-size:14px;line-height:1.5;display:flex;gap:11px;align-items:flex-start}
+.intro i{flex:none;width:30px;height:30px;border-radius:9px;background:var(--accent-soft);color:var(--accent);display:flex;align-items:center;justify-content:center;font:600 13px/1 var(--mono);font-style:normal;margin-top:1px}
+.intro li.hi i{background:var(--terra-soft);color:var(--terra)}
+.intro b{font-weight:600}
+/* filters */
+.filters{position:sticky;top:49px;z-index:40;background:rgba(247,244,239,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--mist)}
+.filters .wrap{display:flex;gap:8px;overflow-x:auto;padding:10px 16px;scrollbar-width:none}
+.filters .wrap::-webkit-scrollbar{display:none}
+.chip{flex:none;font:500 12px/1 var(--mono);color:var(--slate);background:transparent;border:1px solid var(--mist);border-radius:999px;padding:9px 14px;cursor:pointer;white-space:nowrap}
+.chip.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+.chip.core{color:var(--terra);border-color:var(--terra)}
+.chip.core.on{background:var(--terra);color:#fff}
+/* sections */
+section{padding:26px 0 8px}
+.sec-h{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:4px}
+.sec-h .n{font:600 12px/1 var(--mono);color:var(--terra)}
+.grid{display:grid;gap:14px;margin-top:14px}
+@media(min-width:760px){.grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1080px){.grid.three{grid-template-columns:1fr 1fr}}
+/* card */
+.card{background:var(--card);border:1px solid var(--mist);border-radius:var(--r);padding:18px 18px 14px;display:flex;flex-direction:column;gap:8px}
+.card h3{margin:0;font-size:17px;font-weight:600;letter-spacing:-.01em;line-height:1.25;padding-right:54px;position:relative}
+.card .tag{position:absolute;right:0;top:1px;font:600 9px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;border-radius:5px;padding:4px 7px}
+.tag.core{background:var(--terra-soft);color:var(--terra)}
+.tag.add{background:var(--accent-soft);color:var(--accent)}
+.tag.ctx{background:var(--paper);color:var(--stone)}
+.card .src{font:500 11px/1.5 var(--mono);color:var(--stone);margin:0}
+.card p{font-size:14px;line-height:1.55;margin:0}
+.card b{font-weight:600;color:var(--accent)}
+.card .vkr{border-top:1px dashed var(--mist);padding-top:8px;font-size:13.5px;color:var(--slate)}
+.card .vkr b{color:var(--terra)}
+.card.off{display:none}
+/* decision map */
+.dmap{background:var(--ink);color:var(--white);border-radius:18px;padding:22px 20px;margin-top:16px}
+.dmap h2{color:#fff}
+.dmap .row{display:grid;grid-template-columns:1fr;gap:4px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.14);font-size:14px}
+.dmap .row:last-child{border-bottom:none}
+.dmap .q{color:#D9D4CA}
+.dmap .a{font-weight:600}
+.dmap .a span.m{color:#E8B48C}
+@media(min-width:760px){.dmap .row{grid-template-columns:1.1fr 1fr;gap:16px;align-items:baseline}}
+/* ethics strip */
+.strip{background:var(--accent-soft);border:1px solid var(--accent);border-radius:var(--r);padding:14px 16px;font-size:14px;margin-top:18px}
+
+/* my-core stars */
+.card h3{padding-right:84px}
+.star{position:absolute;right:0;top:-2px;transform:translateY(-2px);border:1.5px solid var(--mist);background:#fff;color:var(--stone);border-radius:999px;font:600 11.5px/1 var(--mono);padding:7px 10px;cursor:pointer;display:inline-flex;align-items:center;gap:5px}
+.star:hover{border-color:var(--terra);color:var(--terra)}
+.card.sel .star{background:var(--terra);border-color:var(--terra);color:#fff}
+.card .tag{right:0;top:30px}
+#coreEmpty{display:none;background:var(--terra-soft);border:1.5px dashed var(--terra);border-radius:var(--r);padding:26px 22px;margin:22px 0;text-align:center;color:var(--slate);font-size:14.5px}
+#coreEmpty b{color:var(--terra)}
+.chip .cnt{display:inline-block;min-width:16px;margin-left:4px;background:rgba(255,255,255,.25);border-radius:99px;padding:1px 5px;font-size:10px}
+.chip.core:not(.on) .cnt{background:var(--terra-soft)}
+footer{margin-top:34px;padding:24px 0 48px;border-top:1px solid var(--mist);background:var(--paper);color:var(--slate);font-size:13px}
+footer ul{margin:8px 0 0;padding-left:18px}
+footer li{margin:3px 0}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <span class="t"><span class="ru">Методы исследования · набор Е. Шаповаловой</span><span class="en">Research methods · E. Shapovalova's reading set</span></span>
+    <nav class="langbar" aria-label="Language"><button class="on" data-lang="ru">RU</button><button data-lang="en">EN</button></nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <p class="lbl"><span class="ru">ВКР · НИУ ВШЭ · МПБК 2026–2027 · внутренний гайд команды</span><span class="en">Master's thesis · HSE University · 2026–2027 · internal team guide</span></p>
+    <h1><span class="ru">Методы исследования бессознательного в&nbsp;организациях</span><span class="en">Methods for researching the unconscious in&nbsp;organisations</span></h1>
+    <ul class="intro">
+      <li><i>19</i><span><span class="ru"><b>Что это.</b> 19 методов из 25 источников набора — по каждому: суть в 2–3 фразах · когда подходит · границы · строка «для нашей ВКР».</span><span class="en"><b>What this is.</b> 19 methods from the 25 sources in the set — for each: the essence in 2–3 sentences · when it fits · limits · a “for our thesis” line.</span></span></li>
+      <li><i>3</i><span><span class="ru"><b>Три школы набора.</b> Психосоциальная (Холлвэй и Джефферсон: «защищённый субъект») · биографически-нарративная (Венграф: BNIM) · социоаналитическая (Лонг, Хиншелвуд: организация как носитель бессознательного).</span><span class="en"><b>Three schools in the set.</b> Psychosocial (Hollway & Jefferson: the “defended subject”) · biographic-narrative (Wengraf: BNIM) · socioanalytic (Long, Hinshelwood: the organisation as carrier of the unconscious).</span></span></li>
+      <li><i>⊞</i><span><span class="ru"><b>Как читать.</b> Начните с карты выбора ниже; фильтры в шапке режут каталог по типу данных; переключатель RU/EN — справа вверху.</span><span class="en"><b>How to read.</b> Start with the decision map below; the header filters slice the catalogue by data type; the RU/EN switch is top right.</span></span></li>
+      <li><i>◈</i><span><span class="ru"><b>Метки на карточках</b> — рекомендация составителя: <b>ядро</b> — прямо ложится на наш дизайн · <b>дополнение</b> — усиливает отдельный блок · <b>контекст</b> — знать и цитировать.</span><span class="en"><b>Card tags</b> are the compiler's recommendation: <b>core</b> — fits our design directly · <b>add-on</b> — strengthens one block · <b>context</b> — to know and cite.</span></span></li>
+      <li class="hi"><i>★</i><span><span class="ru"><b>Моё ядро — собираете сами.</b> Кнопка «☆ в ядро» на карточке добавляет метод в ваш личный список; раздел «★ Моё ядро» в фильтрах по умолчанию пуст. Выбор запоминается в этом браузере — у каждого автора своё ядро.</span><span class="en"><b>My core — you build it yourself.</b> The “☆ add to core” button puts a method on your personal list; the “★ My core” filter starts empty. The selection is remembered in this browser — each author has their own core.</span></span></li>
+      <li><i>!</i><span><span class="ru"><b>Статус.</b> Черновик подготовлен с помощью ИИ по файлам набора — проверяется командой; внутренний документ, наружу не передаётся.</span><span class="en"><b>Status.</b> Draft prepared with AI assistance from the files in the set — to be checked by the team; internal document, not for external distribution.</span></span></li>
+    </ul>
+  </div>
+</div>
+
+<div class="filters">
+  <div class="wrap">
+    <button class="chip on" data-f="all"><span class="ru">Все методы</span><span class="en">All methods</span></button>
+    <button class="chip" data-f="int"><span class="ru">Интервью</span><span class="en">Interviews</span></button>
+    <button class="chip" data-f="obs"><span class="ru">Наблюдение</span><span class="en">Observation</span></button>
+    <button class="chip" data-f="grp"><span class="ru">Групповые и визуальные</span><span class="en">Group & visual</span></button>
+    <button class="chip" data-f="ana"><span class="ru">Анализ и строгость</span><span class="en">Analysis & rigour</span></button>
+    <button class="chip" data-f="act"><span class="ru">Действие</span><span class="en">Action</span></button>
+    <button class="chip core" data-f="core"><span class="ru">★ Моё ядро</span><span class="en">★ My core</span><span class="cnt" id="coreCnt">0</span></button>
+  </div>
+</div>
+
+<main class="wrap">
+
+<div id="coreEmpty"><b><span class="ru">Ядро пока пусто.</span><span class="en">Your core is empty.</span></b><br><span class="ru">Пройдитесь по разделам и отметьте методы кнопкой «☆ в ядро» — они соберутся здесь, в вашем личном списке. Выбор сохраняется в этом браузере и у каждого автора свой.</span><span class="en">Browse the sections and mark methods with “☆ add to core” — they will gather here in your personal list. The selection is saved in this browser; each author has their own.</span></div>
+
+<section id="map">
+  <div class="dmap">
+    <h2><span class="ru">Карта выбора: что вам нужно — и чем это берут</span><span class="en">Decision map: what you need — and what captures it</span></h2>
+    <div class="row"><span class="q"><span class="ru">Как человек проживает события, о которых трудно говорить прямо</span><span class="en">How a person lives through events that are hard to speak about directly</span></span><span class="a"><span class="m">FANI</span> · BNIM · <span class="ru">психоаналитическое интервью</span><span class="en">the psychoanalytic interview</span></span></div>
+    <div class="row"><span class="q"><span class="ru">Целая жизнь или карьера как контекст сегодняшнего опыта</span><span class="en">A whole life or career as the context of present experience</span></span><span class="a"><span class="m">BNIM</span> · <span class="ru">биографический слой FANI</span><span class="en">the biographic layer of FANI</span></span></div>
+    <div class="row"><span class="q"><span class="ru">Человек в роли и организация-в-уме, а не биография</span><span class="en">The person-in-role and the organisation-in-the-mind, not the biography</span></span><span class="a"><span class="ru"><span class="m">социоаналитическое интервью</span> · ORA · ролевая биография</span><span class="en"><span class="m">the socioanalytic interview</span> · ORA · role biography</span></span></div>
+    <div class="row"><span class="q"><span class="ru">Групповая динамика вживую, а не в пересказе</span><span class="en">Group dynamics live, not retold</span></span><span class="a"><span class="ru"><span class="m">наблюдение организации</span> · group relations</span><span class="en"><span class="m">organisational observation</span> · group relations</span></span></div>
+    <div class="row"><span class="q"><span class="ru">То, что не проходит через слова: образы, сны, фотографии</span><span class="en">What does not pass through words: images, dreams, photographs</span></span><span class="a"><span class="ru"><span class="m">рисунок</span> · social dreaming · фото-матрица</span><span class="en"><span class="m">drawings</span> · social dreaming · the photo-matrix</span></span></div>
+    <div class="row"><span class="q"><span class="ru">Проверяемость интерпретаций и защита от произвола</span><span class="en">Testable interpretations, protected from arbitrariness</span></span><span class="a"><span class="ru"><span class="m">операционализация</span> · гештальт-анализ · панели BNIM</span><span class="en"><span class="m">operationalisation</span> · gestalt analysis · BNIM panels</span></span></div>
+    <div class="row"><span class="q"><span class="ru">Изменение вместе с исследованием, а не после него</span><span class="en">Change alongside the research, not after it</span></span><span class="a"><span class="m">participatory action research</span></span></div>
+  </div>
+</section>
+
+<section id="s-int">
+  <div class="sec-h"><span class="n">01</span><h2><span class="ru">Интервью</span><span class="en">Interviews</span></h2></div>
+
+  <div class="grid">
+
+  <article class="card" data-g="int" data-t="core">
+    <h3><span class="ru">FANI — свободно-ассоциативное нарративное интервью</span><span class="en">FANI — the Free Association Narrative Interview</span><span class="tag core"><span class="ru">ядро</span><span class="en">core</span></span></h3>
+    <p class="src">Hollway & Jefferson 2008 (SAGE); Doing Qualitative Research Differently, гл. 2–3 (2000/2013)</p>
+    <p><span class="ru"><b>Суть.</b> Респондент — «защищённый субъект»: он не прозрачен сам себе, и тревога формирует его рассказ. Поэтому интервью строится на свободных ассоциациях: открытые вопросы, вызывающие истории; никаких «почему»; порядок тем задаёт респондент, а не гайд; второй проход возвращается к сказанному его же словами. Смысл ищется не в ответах, а в связках, перескоках и умолчаниях.</span><span class="en"><b>Essence.</b> The respondent is a “defended subject”: not transparent to themselves, with anxiety shaping the account. The interview therefore runs on free association: open questions that elicit stories; no “why” questions; the respondent, not the guide, sets the order of topics; a second pass returns to what was said in the respondent's own words. Meaning is sought not in answers but in links, jumps and silences.</span></p>
+    <p><span class="ru"><b>Когда подходит.</b> Темы, в которых прямой вопрос вызывает защитный, социально-приемлемый ответ: страхи, провалы, утраты, конфликты. Малые выборки, глубокий материал по каждому человеку.</span><span class="en"><b>When it fits.</b> Topics where a direct question triggers a defended, socially acceptable answer: fears, failures, losses, conflicts. Small samples, deep material per person.</span></p>
+    <p><span class="ru"><b>Границы.</b> Трудоёмко; требует двух встреч и аналитической подготовки интервьюера; не даёт стандартизованных сравнений без отдельной процедуры анализа.</span><span class="en"><b>Limits.</b> Labour-intensive; requires two sessions and analytic training of the interviewer; yields no standardised comparisons without a separate analysis procedure.</span></p>
+    <p class="vkr"><span class="ru"><b>Для нашей ВКР:</b> ближайший родственник нашего гайда — эмная этапная карта и зонды эпизодов уже работают по логике FANI; принципы «не наводить» и «истории, а не мнения» у нас закреплены. Цитировать как методологическую опору интервью.</span><span class="en"><b>For our thesis:</b> the closest relative of our interview guide — the emic stage map and episode probes already follow FANI logic; our “don't lead” and “stories, not opinions” rules are its principles. Cite as the methodological foundation of the interviews.</span></p>
+  </article>
+
+  <article class="card" data-g="int" data-t="core">
+    <h3><span class="ru">BNIM — биографически-нарративный интерпретативный метод</span><span class="en">BNIM — the Biographic-Narrative Interpretive Method</span><span class="tag core"><span class="ru">ядро</span><span class="en">core</span></span></h3>
+    <p class="src">Wengraf, Short Guide 2004; Chamberlayne 2005; Oratis, BNIM in organisations 2023</p>
+    <p><span class="ru"><b>Суть.</b> Один-единственный открывающий вопрос (SQUIN) вызывает цельный рассказ жизни или истории — интервьюер молчит и не перебивает; вторая подсессия расспрашивает только рассказанное, в порядке рассказа и словами рассказчика. Анализ ведётся «двумя дорожками»: прожитая жизнь (факты, датированные события) отдельно от рассказанной истории (как она изложена) — расхождение между ними и есть главные данные. Интерпретация — в панелях: группа выдвигает гипотезы по фрагментам, не зная продолжения.</span><span class="en"><b>Essence.</b> A single opening question (SQUIN) elicits a whole life story or case narrative — the interviewer stays silent; the second subsession asks only about what was told, in the order and the words of the teller. Analysis runs on “twin tracks”: the lived life (dated facts) separately from the told story (how it is narrated) — the gap between them is the prime datum. Interpretation happens in panels: a group hypothesises on chunks without knowing what comes next.</span></p>
+    <p><span class="ru"><b>Когда подходит.</b> Когда сегодняшний опыт не понять без биографической канвы; когда важно, как люди переустраивают историю задним числом; для сравнения кейсов через структурные гипотезы.</span><span class="en"><b>When it fits.</b> When present experience cannot be understood without the biographic line; when it matters how people rework history in hindsight; for case comparison through structural hypotheses.</span></p>
+    <p><span class="ru"><b>Границы.</b> Самый трудоёмкий из интервью-методов (панели — часы групповой работы на кейс); биографический фокус шире, чем нужен многим организационным вопросам.</span><span class="en"><b>Limits.</b> The most labour-intensive of the interview methods (panels take hours of group work per case); the biographic focus is broader than many organisational questions need.</span></p>
+    <p class="vkr"><span class="ru"><b>Для нашей ВКР:</b> «две дорожки» — это наше различение документальной канвы и рассказа (хронология М3 против этапной карты); панельная логика — родня нашего слепого кодирования. Свободный рассказ в. 4 — мини-SQUIN. Опереться при защите дизайна.</span><span class="en"><b>For our thesis:</b> the twin tracks are our distinction between the documentary line and the narrative (chronology vs the stage map); panel logic is kin to our blind coding. Our free-narrative question is a mini-SQUIN. Lean on it when defending the design.</span></p>
+  </article>
+
+  <article class="card" data-g="int" data-t="core">
+    <h3><span class="ru">Социоаналитическое интервью</span><span class="en">The socioanalytic interview</span><span class="tag core"><span class="ru">ядро</span><span class="en">core</span></span></h3>
+    <p class="src">Long & Harding — Socioanalytic Methods (2013), гл. 5; Long — Stamenova & Hinshelwood (2018), гл. 2</p>
+    <p><span class="ru"><b>Суть.</b> Интервью не о человеке, а об организации-в-его-уме: как роль, система и её тревоги живут в опыте одного носителя. Интервьюер слушает ассоциативно — не только содержание, но и то, из какой роли говорится каждая фраза; материал читается как окно в системную динамику, а не в личность.</span><span class="en"><b>Essence.</b> An interview not about the person but about the organisation-in-their-mind: how the role, the system and its anxieties live in one member's experience. The interviewer listens associatively — to content, and to which role each utterance is spoken from; the material is read as a window onto systemic dynamics, not personality.</span></p>
+    <p><span class="ru"><b>Когда подходит.</b> Организационные исследования, где единица — система, а респонденты — её информанты; когда нужно собрать групповую динамику из индивидуальных разговоров.</span><span class="en"><b>When it fits.</b> Organisational research where the unit is the system and respondents are its informants; when group dynamics must be assembled from individual conversations.</span></p>
+    <p><span class="ru"><b>Границы.</b> Требует дисциплины: легко соскользнуть в психологизацию отдельного человека; перенос на интервьюера — материал, но и риск.</span><span class="en"><b>Limits.</b> Requires discipline: it is easy to slide into psychologising the individual; transference onto the interviewer is both material and risk.</span></p>
+    <p class="vkr"><span class="ru"><b>Для нашей ВКР:</b> точное имя того, что мы делаем: respondents как носители командной динамики, правило «система, не личность» — наш принцип 7 и правило неатрибутируемости. Прямая цитата для §2.1.</span><span class="en"><b>For our thesis:</b> the exact name of what we do: respondents as carriers of team dynamics; “system, not personality” is our rule too. A direct citation for the methods chapter.</span></p>
+  </article>
+
+  <article class="card" data-g="int" data-t="ctx">
+    <h3><span class="ru">Полуструктурированное и неструктурированное интервью</span><span class="en">Semi-structured and unstructured interviewing</span><span class="tag ctx"><span class="ru">контекст</span><span class="en">context</span></span></h3>
+    <p class="src">Brinkmann — Oxford Handbook of Qualitative Research (2020), ch. 15</p>
+    <p><span class="ru"><b>Суть.</b> Канонический обзор: интервью как социальная практика, а не нейтральный съём данных; шкала структурированности, число участников, стили интервьюера (от доксастического — собирать мнения — до эпистемического — проверять знание в диалоге).</span><span class="en"><b>Essence.</b> The canonical overview: interviewing as a social practice, not neutral data capture; the structure continuum, numbers of participants, interviewer styles (from doxastic — collecting opinions — to epistemic — testing knowledge in dialogue).</span></p>
+    <p><span class="ru"><b>Когда подходит.</b> Как рамка по умолчанию для любого интервью-дизайна и как язык, на котором метод объясняется «обычному» методологу.</span><span class="en"><b>When it fits.</b> As the default frame for any interview design — and the language in which the method is explained to a mainstream methodologist.</span></p>
+    <p><span class="ru"><b>Границы.</b> Про бессознательное молчит: берёт рассказ за чистую монету ровно там, где психосоциальные методы начинают работать.</span><span class="en"><b>Limits.</b> Silent on the unconscious: takes the account at face value exactly where psychosocial methods begin to work.</span></p>
+    <p class="vkr"><span class="ru"><b>Для нашей ВКР:</b> цитировать для легитимации полуструктурированного формата перед неаналитическим читателем; наши отступления от него обосновывать через FANI.</span><span class="en"><b>For our thesis:</b> cite to legitimise the semi-structured format for the non-analytic reader; justify our departures from it via FANI.</span></p>
+  </article>
+
+  <article class="card" data-g="int" data-t="ctx">
+    <h3><span class="ru">Психоаналитическое интервью как источник знания</span><span class="en">The psychoanalytic interview as a source of knowledge</span><span class="tag ctx"><span class="ru">контекст</span><span class="en">context</span></span></h3>
+    <p class="src">Kvale 2003 — Qualitative Research in Psychology (APA), ch. 14</p>
+    <p><span class="ru"><b>Суть.</b> Аргумент Квале: значительная часть принятого психологического знания (Фрейд, Пиаже, Хоторнские интервью) произведена психоаналитическим интервью — а сам метод при этом академически отвергнут. Семь черт терапевтического интервью (открытый режим, многократность, интерпретация, эмоциональное взаимодействие...) предлагаются как ресурс для исследовательского.</span><span class="en"><b>Essence.</b> Kvale's argument: much accepted psychological knowledge (Freud, Piaget, the Hawthorne interviews) was produced by the psychoanalytic interview — while the method itself is academically rejected. Seven features of the therapeutic interview (open mode, repeated meetings, interpretation, emotional interaction…) are offered as resources for research interviewing.</span></p>
+    <p><span class="ru"><b>Когда подходит.</b> Как методологическое обоснование: почему аналитически информированное интервью — законный научный инструмент.</span><span class="en"><b>When it fits.</b> As methodological grounding: why the analytically informed interview is a legitimate scientific instrument.</span></p>
+    <p><span class="ru"><b>Границы.</b> Это аргумент, а не протокол: процедуры придётся брать из FANI/BNIM.</span><span class="en"><b>Limits.</b> It is an argument, not a protocol: procedures must come from FANI/BNIM.</span></p>
+    <p class="vkr"><span class="ru"><b>Для нашей ВКР:</b> опора введения методической части — особенно против упрёка «интервью предвзято».</span><span class="en"><b>For our thesis:</b> support for the methods introduction — especially against the “interviews are biased” objection.</span></p>
+  </article>
+
+  <article class="card" data-g="int" data-t="add">
+    <h3><span class="ru">Контрперенос как исследовательский инструмент</span><span class="en">Countertransference as a research instrument</span><span class="tag add"><span class="ru">дополнение</span><span class="en">add-on</span></span></h3>
+    <p class="src">Holmes 2013 — Qualitative Research in Psychology 10(2); Midgley & Holmes — S&H (2018), гл. 3</p>
+    <p><span class="ru"><b>Суть.</b> Реакции исследователя во время интервью и при повторном прослушивании — данные: через проективную идентификацию они замещают непроизносимый опыт респондента. Обязательная пара к этому — различение дисциплинарной и личной рефлексивности: что во мне от его материала, а что от моего.</span><span class="en"><b>Essence.</b> The researcher's reactions during the interview and on re-listening are data: via projective identification they stand in for the respondent's unspeakable experience. The obligatory companion is the distinction between disciplinary and personal reflexivity: what in me belongs to their material, and what is my own.</span></p>
+    <p><span class="ru"><b>Когда подходит.</b> Везде, где интервьюер аналитически подготовлен и ведётся систематическая запись откликов; темы с сильным аффектом.</span><span class="en"><b>When it fits.</b> Wherever the interviewer is analytically trained and responses are recorded systematically; high-affect topics.</span></p>
+    <p><span class="ru"><b>Границы.</b> Главная методологическая проблема — распутать отклик на респондента и собственный материал исследователя; без супервизии вырождается в самоописание.</span><span class="en"><b>Limits.</b> The core methodological problem is disentangling the response to the respondent from the researcher's own material; without supervision it degrades into self-description.</span></p>
+    <p class="vkr"><span class="ru"><b>Для нашей ВКР:</b> методологическое обоснование постинтервью-заметки и дневника исследователя; слой остаётся авторским (в виньетки не входит) — ровно по предостережению Холмса.</span><span class="en"><b>For our thesis:</b> the methodological grounding of our post-interview note and researcher diary; the layer stays with the authors (never in vignettes) — exactly per Holmes's caution.</span></p>
+  </article>
+
+  </div>
+</section>
+
+<section id="s-obs">
+  <div class="sec-h"><span class="n">02</span><h2><span class="ru">Наблюдение</span><span class="en">Observation</span></h2></div>
+  <div class="grid">
+
+  <article class="card" data-g="obs" data-t="core">
+    <h3><span class="ru">Психоаналитическое наблюдение организации</span><span class="en">Psychoanalytic organisational observation</span><span class="tag core"><span class="ru">ядро</span><span class="en">core</span></span></h3>
+    <p class="src">Hinshelwood — Long (2013), гл. 3 «Observing anxiety»; Skogstad — S&H (2018), гл. 6</p>
+    <p><span class="ru"><b>Суть.</b> Перенос тавистокского наблюдения младенцев на организацию: наблюдатель регулярно, в одно время, молча присутствует в рабочем месте, ничего не записывая на месте; подробная запись — сразу после; семинар наблюдателей разбирает записи. Инструмент — психика наблюдателя: атмосфера, собственные чувства и то, что с ними делает поле, читаются как данные о тревоге и защитах системы.</span><span class="en"><b>Essence.</b> Tavistock infant observation transposed to the organisation: the observer attends the same setting regularly, in silence, taking no notes on site; a detailed record is written immediately afterwards; an observers' seminar works through the records. The instrument is the observer's mind: atmosphere, one's own feelings and what the field does to them are read as data on the system's anxiety and defences.</span></p>
+    <p><span class="ru"><b>Когда подходит.</b> Когда нужна живая динамика, а не пересказ: защиты видны в поведении до того, как о них смогут рассказать; хорош как триангуляция к интервью.</span><span class="en"><b>When it fits.</b> When live dynamics are needed, not retellings: defences show in behaviour before anyone can narrate them; strong as triangulation for interviews.</span></p>
+    <p><span class="ru"><b>Границы.</b> Доступ — самый дорогой; наблюдатель без подготовки и семинара проецирует больше, чем видит; один формат ≠ вся организация.</span><span class="en"><b>Limits.</b> Access is the costliest; an untrained observer without a seminar projects more than they see; one setting ≠ the whole organisation.</span></p>
+    <p class="vkr"><span class="ru"><b>Для нашей ВКР:</b> это методологическая база нашего М5 (наблюдение одной стратегической встречи) — и готовый источник для протокола наблюдения, которого у нас ещё нет. Хиншелвудская глава — первая к прочтению.</span><span class="en"><b>For our thesis:</b> the methodological base of our single-meeting observation — and a ready source for the observation protocol we have yet to write. Hinshelwood's chapter is the first to read.</span></p>
+  </article>
+
+  <article class="card" data-g="obs grp" data-t="ctx">
+    <h3><span class="ru">Конференции групповых отношений</span><span class="en">Group relations conferences</span><span class="tag ctx"><span class="ru">контекст</span><span class="en">context</span></span></h3>
+    <p class="src">Aram & Sher — Long (2013), гл. 13</p>
+    <p><span class="ru"><b>Суть.</b> Временная учебная организация (традиция Лестерских конференций), в которой участники исследуют власть, роль и границы, проживая их здесь-и-сейчас; одновременно метод опыта и исследовательская площадка групповой динамики.</span><span class="en"><b>Essence.</b> A temporary learning organisation (the Leicester tradition) in which members study authority, role and boundaries by living them here-and-now; at once an experiential method and a research site for group dynamics.</span></p>
+    <p><span class="ru"><b>Когда подходит.</b> Исследование и обучение динамике власти и роли; подготовка исследователей-наблюдателей.</span><span class="en"><b>When it fits.</b> Studying and teaching the dynamics of authority and role; training researcher-observers.</span></p>
+    <p><span class="ru"><b>Границы.</b> Не полевой метод для чужой организации — это собственная институция со своим штабом и экономикой.</span><span class="en"><b>Limits.</b> Not a field method for someone else's organisation — it is an institution of its own, with staff and economics.</span></p>
+    <p class="vkr"><span class="ru"><b>Для нашей ВКР:</b> контекст школы; в дизайн не входит.</span><span class="en"><b>For our thesis:</b> school context; not part of the design.</span></p>
+  </article>
+
+  </div>
+</section>
+
+<section id="s-grp">
+  <div class="sec-h"><span class="n">03</span><h2><span class="ru">Групповые и визуальные социоаналитические методы</span><span class="en">Group and visual socioanalytic methods</span></h2></div>
+  <div class="grid">
+
+  <article class="card" data-g="grp" data-t="add">
+    <h3><span class="ru">Рисунок в исследовании и интервью</span><span class="en">Drawings in research and interviews</span><span class="tag add"><span class="ru">дополнение</span><span class="en">add-on</span></span></h3>
+    <p class="src">Nossal — Long (2013), гл. 4; Guillemin 2004; Brailas 2020; Clarke et al. — метафора и рисунок</p>
+    <p><span class="ru"><b>Суть.</b> Участника просят нарисовать ситуацию («нарисуйте вашу организацию сейчас»), затем рисунок разговаривается: сам акт рисования производит знание, обходя вербальные защиты; метафоры рисунка организуют опыт — и одновременно скрывают его часть (Clarke: метафора и показывает, и ослепляет).</span><span class="en"><b>Essence.</b> The participant is asked to draw a situation (“draw your organisation as it is now”), and the drawing is then talked through: the act of drawing itself produces knowledge, bypassing verbal defences; the drawing's metaphors organise experience — and simultaneously hide part of it (Clarke: metaphor both reveals and blinds).</span></p>
+    <p><span class="ru"><b>Когда подходит.</b> Когда словам нельзя доверять первыми: образ целой системы, аффективная окраска ролей, сравнение рисунков разных участников одной команды.</span><span class="en"><b>When it fits.</b> When words cannot be trusted first: an image of the whole system, the affective colouring of roles, comparing drawings by members of one team.</span></p>
+    <p><span class="ru"><b>Границы.</b> Интерпретация принадлежит автору рисунка — исследователь спрашивает, а не расшифровывает; сопротивление «я не умею рисовать» надо уметь держать.</span><span class="en"><b>Limits.</b> Interpretation belongs to the drawing's author — the researcher asks rather than decodes; the “I can't draw” resistance has to be held.</span></p>
+    <p class="vkr"><span class="ru"><b>Для нашей ВКР:</b> кандидат в расширение интервью (этапная карта как рисунок линии стратегии) и в фолоу-ап сессии команды; дёшево, совместимо с нашим временем.</span><span class="en"><b>For our thesis:</b> a candidate extension of the interview (the stage map as a drawn line of the strategy) and of team follow-up sessions; cheap and compatible with our timing.</span></p>
+  </article>
+
+  <article class="card" data-g="grp" data-t="ctx">
+    <h3><span class="ru">Social dreaming — матрица социальных сновидений</span><span class="en">Social dreaming — the social dreaming matrix</span><span class="tag ctx"><span class="ru">контекст</span><span class="en">context</span></span></h3>
+    <p class="src">Baglioni & Fubini — Long (2013), гл. 6; традиция Гордона Лоуренса</p>
+    <p><span class="ru"><b>Суть.</b> Участники приносят сны не как личный материал, а как материал системы: матрица (не группа!) свободно ассоциирует к снам, и из связей проступает то, что организация знает, но не может помыслить. Опора — «ассоциативное бессознательное» Лонг: бессознательное как сеть мыслей между людьми, а не внутри одного.</span><span class="en"><b>Essence.</b> Participants bring dreams not as personal material but as the system's material: the matrix (not a group!) free-associates to the dreams, and the links reveal what the organisation knows but cannot think. The ground is Long's “associative unconscious”: the unconscious as a web of thought between people rather than inside one.</span></p>
+    <p><span class="ru"><b>Когда подходит.</b> Ранние стадии исследования поля; большие системы и общества; поиск того, о чём ещё нет языка.</span><span class="en"><b>When it fits.</b> Early stages of field research; large systems and societies; finding what has no language yet.</span></p>
+    <p><span class="ru"><b>Границы.</b> Требует обученного ведущего и культуры доверия; для компании-клиента звучит экзотично — продаётся труднее всего.</span><span class="en"><b>Limits.</b> Needs a trained host and a culture of trust; sounds exotic to a client company — the hardest sell of all.</span></p>
+    <p class="vkr"><span class="ru"><b>Для нашей ВКР:</b> в полевой дизайн не берём (наружная лексика, доступ); знать как фон социоаналитической методологии.</span><span class="en"><b>For our thesis:</b> not for the field design (external language, access); know it as the background of socioanalytic methodology.</span></p>
+  </article>
+
+  <article class="card" data-g="grp" data-t="ctx">
+    <h3><span class="ru">Социальная фото-матрица и dream-drawing</span><span class="en">The social photo-matrix and social dream-drawing</span><span class="tag ctx"><span class="ru">контекст</span><span class="en">context</span></span></h3>
+    <p class="src">Sievers — Long (2013), гл. 7; Mersky — гл. 8; Mersky & Sievers — S&H (2018), гл. 8</p>
+    <p><span class="ru"><b>Суть.</b> Варианты матричной работы с образом: участники фотографируют свою организацию, и матрица ассоциирует к снимкам (Сиверс) — или рисуют свой сон о рабочей теме и работают с рисунками (Мерски). Образ служит контейнером для того, что нельзя сказать прямо о месте работы.</span><span class="en"><b>Essence.</b> Matrix work with images: participants photograph their organisation and the matrix associates to the pictures (Sievers) — or draw a dream about a work theme and work with the drawings (Mersky). The image serves as a container for what cannot be said directly about the workplace.</span></p>
+    <p><span class="ru"><b>Когда подходит.</b> Глубинная диагностика изнутри организации с готовностью к экспериментальным форматам; исследование «недумаемого» в институциях.</span><span class="en"><b>When it fits.</b> Depth diagnosis from inside an organisation open to experimental formats; researching the un-thought in institutions.</span></p>
+    <p><span class="ru"><b>Границы.</b> Те же, что у social dreaming, плюс логистика съёмки и согласий на изображения.</span><span class="en"><b>Limits.</b> As for social dreaming, plus the logistics of photography and image consents.</span></p>
+    <p class="vkr"><span class="ru"><b>Для нашей ВКР:</b> не берём; упомянуть в обзоре методов как семейство визуальных матриц.</span><span class="en"><b>For our thesis:</b> not used; mention in the methods review as the visual-matrix family.</span></p>
+  </article>
+
+  <article class="card" data-g="grp" data-t="add">
+    <h3><span class="ru">Анализ организационной роли (ORA) и ролевая биография</span><span class="en">Organisational role analysis (ORA) and role biography</span><span class="tag add"><span class="ru">дополнение</span><span class="en">add-on</span></span></h3>
+    <p class="src">Newton — Long (2013), гл. 10; Long — гл. 11; тавистокская линия (Рид, Армстронг)</p>
+    <p><span class="ru"><b>Суть.</b> Серия консультаций, в которых человек исследует свою роль как место встречи личности, системы и задачи: как я беру роль, какую организацию-в-уме несу, что роль делает со мной. Ролевая биография добавляет ось времени: как мои прежние роли (с детства) живут в сегодняшней.</span><span class="en"><b>Essence.</b> A series of consultations in which a person examines their role as the meeting point of person, system and task: how I take up the role, what organisation-in-the-mind I carry, what the role does to me. Role biography adds the time axis: how my earlier roles (from childhood on) live in today's one.</span></p>
+    <p><span class="ru"><b>Когда подходит.</b> Исследование и развитие руководителей; понимание, почему роль берётся именно так; мост исследование↔консультирование.</span><span class="en"><b>When it fits.</b> Executive research and development; understanding why a role is taken up as it is; the research↔consulting bridge.</span></p>
+    <p><span class="ru"><b>Границы.</b> Единица — человек-в-роли, не процесс: командную динамику собирает лишь косвенно; это прежде всего консультационный формат.</span><span class="en"><b>Limits.</b> The unit is the person-in-role, not a process: it reaches team dynamics only indirectly; it is first of all a consulting format.</span></p>
+    <p class="vkr"><span class="ru"><b>Для нашей ВКР:</b> язык «взятия роли» — готовая рамка для командного слоя эпизодов (кто как берёт новую роль после переключения); и прямой мост к практикуму Шаповаловой о переговорах о роли.</span><span class="en"><b>For our thesis:</b> the “role-taking” language is a ready frame for the team layer of episodes (how each person takes up a new role after a switch); and a direct bridge to Shapovalova's own role-negotiation practicum.</span></p>
+  </article>
+
+  <article class="card" data-g="grp" data-t="ctx">
+    <h3><span class="ru">Listening posts и социоаналитический диалог</span><span class="en">Listening posts and socioanalytic dialogue</span><span class="tag ctx"><span class="ru">контекст</span><span class="en">context</span></span></h3>
+    <p class="src">Khaleelee & Stapley — Long (2013), гл. 9; Boccara — гл. 14</p>
+    <p><span class="ru"><b>Суть.</b> Группа граждан или сотрудников «слушает» общество/организацию через собственный опыт: свободный обмен → общие темы → гипотеза о состоянии системы. Социоаналитический диалог Боккары переносит это на политический и общественный уровень.</span><span class="en"><b>Essence.</b> A group of citizens or employees “listens” to society/the organisation through its own experience: free exchange → shared themes → a hypothesis about the state of the system. Boccara's socioanalytic dialogue carries this to the societal and policy level.</span></p>
+    <p><span class="ru"><b>Когда подходит.</b> Срез настроений большой системы; мониторинг во времени; то, для чего опросы слишком грубы.</span><span class="en"><b>When it fits.</b> A reading of a large system's state of mind; monitoring over time; where surveys are too blunt.</span></p>
+    <p><span class="ru"><b>Границы.</b> Низкая разрешающая способность на уровне одной команды; интерпретация сильно зависит от ведущих.</span><span class="en"><b>Limits.</b> Low resolution at the single-team level; interpretation depends heavily on the hosts.</span></p>
+    <p class="vkr"><span class="ru"><b>Для нашей ВКР:</b> не берём; полезно знать как метод «общественной температуры».</span><span class="en"><b>For our thesis:</b> not used; worth knowing as a “societal temperature” method.</span></p>
+  </article>
+
+  <article class="card" data-g="grp ana" data-t="add">
+    <h3><span class="ru">Анализ рабочей культуры и рефлексивное пространство</span><span class="en">Work culture analysis and reflective space</span><span class="tag add"><span class="ru">дополнение</span><span class="en">add-on</span></span></h3>
+    <p class="src">Krantz — Long (2013), гл. 2; de Gooijer — гл. 12</p>
+    <p><span class="ru"><b>Суть.</b> Диагностика организации через её культуру работы: как устроены форматы, что культура делает с тревогой первичной задачи, где есть рефлексивное пространство — способность системы думать о себе, — а где оно схлопнуто. Де Гоойер даёт процедуру диагностики культур по подразделениям.</span><span class="en"><b>Essence.</b> Diagnosing an organisation through its work culture: how formats are arranged, what the culture does with the anxiety of the primary task, where reflective space — the system's capacity to think about itself — exists, and where it has collapsed. De Gooijer provides a unit-by-unit culture diagnostic procedure.</span></p>
+    <p><span class="ru"><b>Когда подходит.</b> Организационная диагностика до вмешательства; сравнение подразделений; язык для разговора с менеджментом.</span><span class="en"><b>When it fits.</b> Organisational diagnosis before intervention; comparing units; a language for talking to management.</span></p>
+    <p><span class="ru"><b>Границы.</b> Скорее рамка диагностики, чем протокол сбора данных — питается интервью и наблюдением.</span><span class="en"><b>Limits.</b> More a diagnostic frame than a data-collection protocol — it feeds on interviews and observation.</span></p>
+    <p class="vkr"><span class="ru"><b>Для нашей ВКР:</b> «рефлексивное пространство» — социоаналитический родственник нашего контейнера (место · мандат · граница · возврат); цитировать в §1.5/§2.4.</span><span class="en"><b>For our thesis:</b> “reflective space” is the socioanalytic relative of our container (place · mandate · boundary · return); cite in the instruments and applied sections.</span></p>
+  </article>
+
+  </div>
+</section>
+
+<section id="s-ana">
+  <div class="sec-h"><span class="n">04</span><h2><span class="ru">Анализ данных, кейс и строгость</span><span class="en">Data analysis, the case, and rigour</span></h2></div>
+  <div class="grid">
+
+  <article class="card" data-g="ana" data-t="core">
+    <h3><span class="ru">Психосоциальный анализ: гештальт и портреты</span><span class="en">Psychosocial analysis: gestalt and pen portraits</span><span class="tag core"><span class="ru">ядро</span><span class="en">core</span></span></h3>
+    <p class="src">Hollway & Jefferson — Doing Qualitative Research Differently, гл. 4 (2013)</p>
+    <p><span class="ru"><b>Суть.</b> Против «фрагментации» кодированием: случай сначала удерживается целым (гештальт) — pen portrait человека, про-форма по кейсу, — и только потом сопоставляется с другими. Вопросы к материалу: что рассказано, что не рассказано, где рассказ ломается, чем он защищает рассказчика.</span><span class="en"><b>Essence.</b> Against fragmentation-by-coding: the case is first held whole (gestalt) — a pen portrait, a case pro-forma — and only then compared with others. Questions to the material: what is told, what is not, where the account breaks, how it defends the teller.</span></p>
+    <p><span class="ru"><b>Когда подходит.</b> Малые N с богатым материалом; когда смысл живёт в связях внутри случая, а не в частотах между случаями.</span><span class="en"><b>When it fits.</b> Small N with rich material; when meaning lives in within-case links, not cross-case frequencies.</span></p>
+    <p><span class="ru"><b>Границы.</b> Интерпретативная нагрузка на исследователя максимальна — без процедур коллективной проверки уязвим для произвола.</span><span class="en"><b>Limits.</b> The interpretive load on the researcher is at its peak — without collective-check procedures it is open to arbitrariness.</span></p>
+    <p class="vkr"><span class="ru"><b>Для нашей ВКР:</b> наша пара «кейс-репорт держит целое + кодбук держит сравнимость» — это ответ на дилемму этой главы; гештальт-ход обязателен в кейс-репорте до кросс-кейса.</span><span class="en"><b>For our thesis:</b> our pairing “case report holds the whole + codebook holds comparability” answers this chapter's dilemma; the gestalt pass belongs in the case report before any cross-case work.</span></p>
+  </article>
+
+  <article class="card" data-g="ana" data-t="core">
+    <h3><span class="ru">Психосоциальный кейс-стади</span><span class="en">The psychosocial case study</span><span class="tag core"><span class="ru">ядро</span><span class="en">core</span></span></h3>
+    <p class="src">Hollway & Jefferson — гл. 7 (2013); Chamberlayne 2005 — сравнение кейсов</p>
+    <p><span class="ru"><b>Суть.</b> Кейс пишется как целостная история защищённого субъекта в его обстоятельствах: биография, динамика интервью и интерпретация соединяются в один аргумент; сравнение кейсов идёт через структурные гипотезы, а не через переменные.</span><span class="en"><b>Essence.</b> The case is written as the whole story of a defended subject in their circumstances: biography, interview dynamics and interpretation joined into a single argument; cases are compared through structural hypotheses rather than variables.</span></p>
+    <p><span class="ru"><b>Когда подходит.</b> Демонстрация механизма на одном развёрнутом случае; жанр для глав-кейсов и для «виньеточной» подачи.</span><span class="en"><b>When it fits.</b> Demonstrating a mechanism in one developed case; the genre for case chapters and vignette-style presentation.</span></p>
+    <p><span class="ru"><b>Границы.</b> Генерализация — только аналитическая; один кейс не несёт доказательной нагрузки сам по себе.</span><span class="en"><b>Limits.</b> Generalisation is analytic only; a single case carries no evidential weight by itself.</span></p>
+    <p class="vkr"><span class="ru"><b>Для нашей ВКР:</b> жанровая рамка наших кейс-репортов — психосоциальная версия того, что мы по Йину делаем структурно. Сшить обе традиции в §2.1 — сильный ход для нового НР.</span><span class="en"><b>For our thesis:</b> the genre frame of our case reports — the psychosocial version of what we do structurally after Yin. Stitching the two traditions together in the methods chapter is a strong move for the new supervisor.</span></p>
+  </article>
+
+  <article class="card" data-g="ana" data-t="core">
+    <h3><span class="ru">Операционализация бессознательных процессов</span><span class="en">Operationalising unconscious processes</span><span class="tag core"><span class="ru">ядро</span><span class="en">core</span></span></h3>
+    <p class="src">Walker & Hinshelwood — S&H (2018), гл. 9; Stamenova — гл. 10</p>
+    <p><span class="ru"><b>Суть.</b> Ответ школы Хиншелвуда на упрёк в непроверяемости: психоаналитический концепт переводится в наблюдаемые индикаторы заранее, до данных, — и тогда интерпретацию можно подтверждать, опровергать и сравнивать между исследователями. Та же логика — сравнение пересекающихся концептов через их операционализации.</span><span class="en"><b>Essence.</b> The Hinshelwood school's answer to the charge of untestability: a psychoanalytic concept is translated into observable indicators in advance, before the data — making interpretation confirmable, refutable and comparable across researchers. The same logic compares overlapping concepts through their operationalisations.</span></p>
+    <p><span class="ru"><b>Когда подходит.</b> Везде, где психоаналитическое исследование должно выдержать внешнюю экспертизу; сравнение конкурирующих объяснений.</span><span class="en"><b>When it fits.</b> Wherever psychoanalytic research must survive external scrutiny; comparing rival explanations.</span></p>
+    <p><span class="ru"><b>Границы.</b> Цена перевода: индикатор всегда беднее концепта; плохая операционализация измеряет слова, а не процесс.</span><span class="en"><b>Limits.</b> The price of translation: an indicator is always poorer than the concept; a bad operationalisation measures words, not process.</span></p>
+    <p class="vkr"><span class="ru"><b>Для нашей ВКР:</b> методологическое оправдание всего кодбука (К/И/Д/П, шкалы, слепое кодирование) — и прямой ответ на вопрос НР о «структурных и динамических переменных». Цитировать первой строкой §2.1.</span><span class="en"><b>For our thesis:</b> the methodological justification of our entire codebook (scales, blind coding) — and the direct answer to the supervisor's question about “structural and dynamic variables”. Cite in the first line of the methods chapter.</span></p>
+  </article>
+
+  <article class="card" data-g="ana" data-t="core">
+    <h3><span class="ru">Этика исследования защищённого субъекта</span><span class="en">The ethics of researching defended subjects</span><span class="tag core"><span class="ru">ядро</span><span class="en">core</span></span></h3>
+    <p class="src">Hollway & Jefferson — гл. 5 (2000/2013)</p>
+    <p><span class="ru"><b>Суть.</b> Классических «информированного согласия и анонимности» мало, когда метод добывает то, чего человек о себе не говорил: честность/узнаваемость интерпретаций, забота против вреда, уважение к защитам респондента — нельзя вскрывать то, что ему не с чем держать. Этика — свойство всей процедуры, а не формы согласия.</span><span class="en"><b>Essence.</b> Classic “informed consent and anonymity” are not enough when the method retrieves what a person has not said about themselves: honesty and recognisability of interpretations, care against harm, respect for the respondent's defences — do not open what they have nothing to hold it with. Ethics is a property of the whole procedure, not of the consent form.</span></p>
+    <p><span class="ru"><b>Когда подходит.</b> Обязательна для любого психосоциального дизайна; рамка для этического раздела заявки и введения.</span><span class="en"><b>When it fits.</b> Mandatory for any psychosocial design; the frame for the ethics section of a proposal and introduction.</span></p>
+    <p><span class="ru"><b>Границы.</b> Не процедура, а принципы: процедуры (формы, комитеты) остаются на исследователе.</span><span class="en"><b>Limits.</b> Principles, not procedures: the forms and committees remain the researcher's task.</span></p>
+    <p class="vkr"><span class="ru"><b>Для нашей ВКР:</b> подкладка наших правил неатрибутируемости, невынесения лексики и «не вскрывать защиту без контейнера» — теперь с каноническим источником.</span><span class="en"><b>For our thesis:</b> the backing of our non-attribution and language rules and of “never open a defence without a container” — now with a canonical source.</span></p>
+  </article>
+
+  </div>
+</section>
+
+<section id="s-act">
+  <div class="sec-h"><span class="n">05</span><h2><span class="ru">Исследование действием</span><span class="en">Action research</span></h2></div>
+  <div class="grid">
+
+  <article class="card" data-g="act" data-t="ctx">
+    <h3><span class="ru">Participatory Action Research (PAR)</span><span class="en">Participatory Action Research (PAR)</span><span class="tag ctx"><span class="ru">контекст</span><span class="en">context</span></span></h3>
+    <p class="src">Chevalier & Buckles — Participatory Action Research, 2nd ed. (Routledge 2019)</p>
+    <p><span class="ru"><b>Суть.</b> Исследование «вместе с» людьми, а не «о них»: циклы планирование → действие → рефлексия, участники — соисследователи, знание и изменение производятся одновременно. Том Шевалье–Баклза — энциклопедия инструментов PAR (от анализа стейкхолдеров до оценки рисков), с опорой и на французскую психосоциологию.</span><span class="en"><b>Essence.</b> Research “with” people rather than “about” them: cycles of planning → action → reflection, participants as co-researchers, knowledge and change produced together. Chevalier & Buckles is an encyclopaedia of PAR tools (from stakeholder analysis to risk assessment), drawing also on French psychosociology.</span></p>
+    <p><span class="ru"><b>Когда подходит.</b> Когда заказ — изменение, а исследование встроено в него; сообщества, образование, оргразвитие с длинным доступом.</span><span class="en"><b>When it fits.</b> When the commission is change, with research built into it; communities, education, organisational development with long access.</span></p>
+    <p><span class="ru"><b>Границы.</b> Исследователь — участник изменений: слепые процедуры и невмешательство недостижимы по построению; другой контракт с организацией.</span><span class="en"><b>Limits.</b> The researcher is an agent of change: blind procedures and non-intervention are unattainable by construction; a different contract with the organisation.</span></p>
+    <p class="vkr"><span class="ru"><b>Для нашей ВКР:</b> наш минимальный сценарий сознательно не-PAR (вмешательство H4 отложено); но консультационное продолжение после защиты — это ровно PAR-контур. Одним абзацем — в «направления дальнейших исследований».</span><span class="en"><b>For our thesis:</b> our minimal scenario is deliberately non-PAR (the intervention hypothesis is deferred); but the post-defence consulting continuation is exactly a PAR loop. One paragraph in “directions for further research”.</span></p>
+  </article>
+
+  </div>
+
+  <div class="strip">
+    <span class="ru"><b>Сквозная рамка набора.</b> Все методы собраны вокруг одной идеи: и респондент, и организация — «защищённые субъекты», поэтому данные производятся (а не собираются) в отношениях с исследователем, бессознательное читается по форме материала (ассоциации, разрывы, образы, контрперенос), а строгость достигается не стандартизацией вопросов, а процедурами: панели, семинары наблюдателей, операционализация, слепые чтения. Это и есть методологический язык нового научного руководителя.</span><span class="en"><b>The set's common frame.</b> Every method gathers around one idea: both the respondent and the organisation are “defended subjects”, so data is produced (not collected) within a relationship with the researcher; the unconscious is read from the form of the material (associations, breaks, images, countertransference); and rigour is achieved not by standardising questions but by procedures: panels, observation seminars, operationalisation, blind readings. This is the new supervisor's methodological language.</span>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><span class="ru"><b>Состав набора (25 файлов):</b></span><span class="en"><b>The set (25 files):</b></span></p>
+    <ul>
+      <li>Hollway W., Jefferson T. Doing Qualitative Research Differently — гл. 1–7 (изд. 2000 и 2013)</li>
+      <li>Hollway W., Jefferson T. The Free Association Narrative Interview Method (SAGE Encyclopedia, 2008)</li>
+      <li>Wengraf T. BNIM Short Guide (2004); Chamberlayne P. Comparative Analysis of Cases (2005); Oratis P. BNIM Researching Organisations (семинар, 2023)</li>
+      <li>Stamenova K., Hinshelwood R. D. (eds.) Methods of Research into the Unconscious (Routledge, 2018)</li>
+      <li>Long S. (ed.) Socioanalytic Methods: Discovering the Hidden in Organisations and Social Systems (Karnac, 2013)</li>
+      <li>Kvale S. The Psychoanalytical Interview as Inspiration for Qualitative Research (APA, 2003)</li>
+      <li>Brinkmann S. Unstructured and Semistructured Interviewing (Oxford Handbook, 2020)</li>
+      <li>Holmes J. Countertransference-Informed Researcher Reflexivity… (QRP, 2013)</li>
+      <li>Guillemin M. Understanding Illness: Using Drawings as a Research Method (2004); Brailas A. Using Drawings in Qualitative Interviews (2020); Clarke J. et al. Understanding Entrepreneurial Identity through Metaphor and Drawing</li>
+      <li>Chevalier J., Buckles D. Participatory Action Research, 2nd ed. (Routledge, 2019)</li>
+    </ul>
+    <p style="margin-top:12px"><span class="ru">Гайд v1.0 · 01.11.2026 · подготовлен с помощью ИИ по файлам набора, требует вычитки командой · внутренний документ, наружу не передаётся · ВКР «Психодинамические аспекты влияния смены стратегических задач на управленческую команду в условиях высокой неопределённости», НИУ ВШЭ</span><span class="en">Guide v1.0 · 01.11.2026 · prepared with AI assistance from the files in the set; to be checked by the team · internal document, not for external distribution · Master's thesis, HSE University</span></p>
+  </div>
+</footer>
+
+<script>
+/* language toggle */
+document.querySelectorAll('.langbar button').forEach(function(b){
+  b.addEventListener('click', function(){
+    document.documentElement.setAttribute('lang', b.getAttribute('data-lang'));
+    document.querySelectorAll('.langbar button').forEach(function(x){ x.classList.toggle('on', x===b); });
+    document.title = b.getAttribute('data-lang')==='en'
+      ? 'Methods for researching the unconscious in organisations — a guide to the reading set'
+      : 'Методы исследования бессознательного в организациях — гайд по набору литературы';
+  });
+});
+/* my core: per-author selection, stored in this browser */
+var CORE = new Set();
+try{ (JSON.parse(localStorage.getItem('vkrCore')||'[]')).forEach(function(k){ CORE.add(k); }); }catch(e){}
+function cardKey(card){ var el = card.querySelector('h3 .ru'); return el ? el.textContent.trim() : ''; }
+function saveCore(){ try{ localStorage.setItem('vkrCore', JSON.stringify(Array.from(CORE))); }catch(e){} }
+function updateCnt(){ var c=document.getElementById('coreCnt'); if(c) c.textContent = CORE.size; }
+document.querySelectorAll('.card').forEach(function(card){
+  var key = cardKey(card);
+  if(CORE.has(key)) card.classList.add('sel');
+  var b = document.createElement('button');
+  b.type='button'; b.className='star';
+  b.innerHTML = '<span class="ic">☆</span><span class="ru">в ядро</span><span class="en">add to core</span>';
+  var sync = function(){
+    var on = card.classList.contains('sel');
+    b.querySelector('.ic').textContent = on ? '★' : '☆';
+    b.querySelector('.ru').textContent = on ? 'в ядре' : 'в ядро';
+    b.querySelector('.en').textContent = on ? 'in core' : 'add to core';
+  };
+  b.addEventListener('click', function(){
+    var on = card.classList.toggle('sel');
+    if(on) CORE.add(key); else CORE.delete(key);
+    saveCore(); updateCnt(); sync();
+    if(curF==='core') applyFilter('core');
+  });
+  card.querySelector('h3').appendChild(b);
+  sync();
+});
+updateCnt();
+
+/* filters */
+var curF = 'all';
+function applyFilter(f){
+  curF = f;
+  document.querySelectorAll('.card').forEach(function(card){
+    var g = card.getAttribute('data-g') || '';
+    var show = f==='all' || (f==='core' ? card.classList.contains('sel') : g.split(' ').indexOf(f)>=0);
+    card.classList.toggle('off', !show);
+  });
+  document.querySelectorAll('main section').forEach(function(s){
+    if(s.id==='map'){ s.style.display = (f==='all') ? '' : 'none'; return; }
+    var any = s.querySelectorAll('.card:not(.off)').length > 0;
+    s.style.display = any ? '' : 'none';
+  });
+  var empty = document.getElementById('coreEmpty');
+  if(empty) empty.style.display = (f==='core' && CORE.size===0) ? 'block' : 'none';
+}
+document.querySelectorAll('.filters .chip').forEach(function(c){
+  c.addEventListener('click', function(){
+    document.querySelectorAll('.filters .chip').forEach(function(x){ x.classList.toggle('on', x===c); });
+    applyFilter(c.getAttribute('data-f'));
+  });
+});
+</script>
+</body>
+</html>
